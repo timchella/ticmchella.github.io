@@ -13,13 +13,14 @@
 }
 
 #phone[data-v-088e44fc], #screen[data-v-088e44fc]{
-    height:100vh;width:100%
+    height:100%;width:100%
 }
 
 #phone[data-v-088e44fc]{
     background-size:cover;
     background-position:center;
-    background-image:url(../images/phone.png)
+    background-image:url(../images/phone.png);
+    display: none;
 }
 
 #screen[data-v-088e44fc]{
@@ -46,6 +47,7 @@
     #phone[data-v-088e44fc]{
         height:80vh;
         width:40.95238vh;
+        display:block;
     }
     #screen[data-v-088e44fc]{
         border-width:2px;
