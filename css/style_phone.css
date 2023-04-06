@@ -19,8 +19,7 @@
 #phone[data-v-088e44fc]{
     background-size:cover;
     background-position:center;
-    background-image:url(../images/phone.png);
-    display: none;
+    background-image:url(../images/phone.png)
 }
 
 #screen[data-v-088e44fc]{
@@ -47,7 +46,6 @@
     #phone[data-v-088e44fc]{
         height:80vh;
         width:40.95238vh;
-        display:block;
     }
     #screen[data-v-088e44fc]{
         border-width:2px;
