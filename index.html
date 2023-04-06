@@ -599,18 +599,63 @@
       main{height:100%;width:100%}
       body{--tw-bg-opacity:1;background-color:rgba(0, 50, 0, 0.8);}
     </style>
-    <style type="text/css">
-      #loading[data-v-088e44fc]{position:absolute;left:0px;top:0px;z-index:20;display:flex;height:100%;width:100%;align-items:center;justify-content:center;--tw-bg-opacity:1;background-color:rgba(199, 179, 216, var(--tw-bg-opacity))}#phone[data-v-088e44fc], #screen[data-v-088e44fc]{height:100%;width:100%}#phone[data-v-088e44fc]{background-size:cover;background-position:center;background-image:url(../phone.png)}#screen[data-v-088e44fc]{display:flex;flex-direction:column;overflow:hidden;--tw-bg-opacity:1;background-color:rgba(243, 244, 246, var(--tw-bg-opacity));background-size:cover;background-position:center;background-image:url(../background.jpg)}@media (min-width: 768px){#phone[data-v-088e44fc], #screen[data-v-088e44fc]{position:absolute}#phone[data-v-088e44fc], #screen[data-v-088e44fc]{left:50%}#phone[data-v-088e44fc], #screen[data-v-088e44fc]{top:50%}#phone[data-v-088e44fc], #screen[data-v-088e44fc]{--tw-translate-x:-50%;transform:var(--tw-transform)}#phone[data-v-088e44fc], #screen[data-v-088e44fc]{--tw-translate-y:-50%;transform:var(--tw-transform)}#phone[data-v-088e44fc], #screen[data-v-088e44fc]{transform:var(--tw-transform)}#phone[data-v-088e44fc]{height:80vh;width:40.95238vh}#screen[data-v-088e44fc]{border-width:2px}#screen[data-v-088e44fc]{--tw-border-opacity:1;border-color:rgba(107, 114, 128, var(--tw-border-opacity))}#screen[data-v-088e44fc]{height:65.69%;width:85.83%}}
-    </style>
+    
+    <link href="css/style_phone.css" rel="stylesheet"/>
+    <link href="css/style_status.css" rel="stylesheet"/>
+    <link href="css/style_lock_screen.css" rel="stylesheet"/>
   </head>
 
   <body>
     <main>
-      <!-- <div>
-        Website for Timchella 2023
-      </div> -->
       <div data-v-088e44fc id="phone">
         <div data-v-088e44fc id="screen">
+          <div data-v-d67541be data-v-088e44fc id="status">
+            <div data-v-d67541be class="justify-start">
+              <div data-v-3eccff26 data-v-d67541be class="icon">
+                <svg data-v-d67541be data-v-3eccff26 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path data-v-d67541be data-v-3eccff26 d="M0 0h24v24H0z" fill="none"></path>
+                  <path data-v-d67541be data-v-3eccff26 d="M2 22h20V2z"></path>
+                </svg>
+              </div>
+              <div data-v-d67541be>
+                &nbsp;Tim-Mobile&nbsp;
+              </div>
+              <div data-v-3eccff26 data-v-d67541be class="icon">
+                <svg data-v-d67541be data-v-3eccff26 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path data-v-d67541be data-v-3eccff26 d="M0 0h24v24H0z" fill="none"></path>
+                  <path data-v-d67541be data-v-3eccff26 d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"></path>
+                </svg>
+              </div>
+            </div>
+            <div data-v-d67541be class="justify-center uppercase"> TIME </div> 
+            <div data-v-d67541be class="justify-end">
+              <div data-v-d67541be>
+                100%
+              </div>
+              <div data-v-3eccff26 data-v-d67541be class="icon">
+                <svg data-v-d67541be data-v-3eccff26 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path data-v-d67541be data-v-3eccff26 d="M0 0h24v24H0z" fill="none"></path>
+                  <path data-v-d67541be data-v-3eccff26 d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <section data-v-fb5d460c data-v-088e44fc="">
+            <header data-v-fb5d460c>
+              <div data-v-fb5d460c class="time">
+                3:57
+              </div> 
+              <div data-v-fb5d460c class="date">
+                Wednesday, April 5
+              </div>
+            </header>
+            <footer data-v-fb5d460c>
+              <div data-v-fb5d460c class="relative w-full">
+                <input id="unlock_slider" data-v-c105abce="" data-v-fb5d460c type="range" min="0" max="100" step="1" value="0">
+                <div data-v-fb5d460c class="instructions" style="opacity: 1;">slide to unlock</div>
+              </div>
+            </footer>
+          </section>
         </div>
       </div>
     </main>
@@ -626,5 +671,6 @@
      -->
     <!-- Template Javascript -->
     <!-- <script src="js/main.js"></script> -->
+    <script src="js/lock_screen.js"></script>
   </body>
 </html>

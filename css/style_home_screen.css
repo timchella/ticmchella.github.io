@@ -1,0 +1,82 @@
+section[data-v-1a77935b]{
+    padding:6%;
+}
+
+#home[data-v-1a77935b]{
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+    justify-items:center;
+    gap:6%;
+    transform: scale(2);
+    opacity: 0;
+}
+
+#home[data-v-1a77935b].home-active{
+    transform: scale(1);
+    transition: transform 0.75s;
+    opacity: 1;
+}
+
+#tray[data-v-1a77935b]{
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    display:grid;
+    width:100%;
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+    gap:6%;
+    background-position:bottom;
+    background-repeat:no-repeat;
+    padding-left:6%;
+    padding-right:6%;
+    background-image:url(/images/tray.png);
+    background-size:100% 100%;
+    padding-bottom:1.25vw
+}
+
+@media (min-width: 768px){
+    #tray[data-v-1a77935b]{padding-bottom:.4vh}
+}
+
+.app[data-v-0ee33287]{
+    display:grid;
+    width:100%;
+    cursor:pointer;
+    grid-auto-flow:row dense;
+    grid-gap:1.25vw
+}
+
+.icon[data-v-0ee33287]{
+    --tw-bg-opacity:1;
+    background-color:rgba(199, 179, 216, var(--tw-bg-opacity));
+    background-size:cover;
+    --tw-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    aspect-ratio:1/1
+}
+
+.title[data-v-0ee33287]{
+    text-align:center;
+    font-family:Inter, sans-serif;
+    --tw-text-opacity:1;color:rgba(230, 255, 115, var(--tw-text-opacity));
+    font-size:3.75vw;
+    text-shadow:1px 1px rgba(0,0,0,.3)
+}
+
+.app.tray .title[data-v-0ee33287]{
+    --tw-text-opacity:1;
+    color:rgba(199, 179, 216, var(--tw-text-opacity));
+    text-shadow:none
+}
+
+@media (min-width: 768px){
+    .app[data-v-0ee33287]{grid-gap:.4vh}
+    .title[data-v-0ee33287]{font-size:1.2vh}
+}
+@supports not (aspect-ratio:1/1){
+    .icon[data-v-0ee33287]:before{float:left}
+    .icon[data-v-0ee33287]:before{content:"";padding-top:100%}
+    .icon[data-v-0ee33287]:after{clear:both}
+    .icon[data-v-0ee33287]:after{display:block}
+    .icon[data-v-0ee33287]:after{content:""}
+}

@@ -1,0 +1,59 @@
+#loading[data-v-088e44fc]{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:20;
+    display:flex;
+    height:100%;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+    --tw-bg-opacity:1;
+    background-color:rgba(199, 179, 216, var(--tw-bg-opacity))
+}
+
+#phone[data-v-088e44fc], #screen[data-v-088e44fc]{
+    height:100vh;width:100%
+}
+
+#phone[data-v-088e44fc]{
+    background-size:cover;
+    background-position:center;
+    background-image:url(../images/phone.png)
+}
+
+#screen[data-v-088e44fc]{
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    --tw-bg-opacity:1;
+    background-color:rgba(243, 244, 246, var(--tw-bg-opacity));
+    background-size:cover;
+    background-position:center;
+    background-image:url(../images/background.jpg)
+}
+
+@media (min-width: 768px){
+    #phone[data-v-088e44fc], #screen[data-v-088e44fc]{
+        position:absolute;
+        left:50%;
+        top:50%;
+        --tw-translate-x:-50%;transform:var(--tw-transform);
+        --tw-translate-y:-50%;transform:var(--tw-transform);
+        transform:var(--tw-transform);
+    }
+    #phone[data-v-088e44fc]{
+        height:80vh;
+        width:40.95238vh;
+    }
+    #screen[data-v-088e44fc]{
+        border-width:2px;
+
+        --tw-border-opacity:1;
+        border-color:rgba(107, 114, 128, var(--tw-border-opacity));
+        height:65.69%;
+        width:85.83%
+    }
+}
+
+section{flex:1 1 0%}
