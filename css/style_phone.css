@@ -23,6 +23,7 @@
 }
 
 #screen[data-v-088e44fc]{
+    position: fixed;
     display:flex;
     flex-direction:column;
     overflow:hidden;
