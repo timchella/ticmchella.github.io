@@ -4,9 +4,10 @@
     width:100%;
     grid-template-columns:repeat(3, minmax(0, 1fr));
     --tw-bg-opacity:1;
-    background-color:rgba(230, 255, 115, var(--tw-bg-opacity));
-    --tw-text-opacity:1;color:rgba(199, 179, 216, var(--tw-text-opacity));
-    font-size:4vw
+    background-color:rgba(37, 42, 42, 1);
+    --tw-text-opacity:1;
+    color:rgba(205, 207, 206);
+    font-size:4vw;
 }
 
 #status[data-v-d67541be],#status>div[data-v-d67541be]{
@@ -29,8 +30,9 @@
 
 .icon[data-v-3eccff26]{
     --tw-text-opacity:1;
-    color:rgba(199, 179, 216, var(--tw-text-opacity));
-    height:4vw;width:4vw
+    /* color:rgba(199, 179, 216, var(--tw-text-opacity)); */
+    height:4vw;
+    width:4vw;
 }
 
 .icon svg[data-v-3eccff26]{

@@ -1,14 +1,24 @@
 
 window.addEventListener('load', function() {
     unlockSlider = document.getElementById("unlock_slider");
+    unlockLabel = document.getElementById("slider-label");
     console.log(unlockSlider);
-    unlockSlider.addEventListener("change", (e) => {
+    unlockSlider.addEventListener("input", (e) => {
         console.log(unlockSlider.value);
         if (unlockSlider.value > 95){
             console.log("UNLOCK");
-            console.log(window.location.href);
-            currentURL = window.location.href;
-            window.location.href = currentURL + "/home_screen.html";
+            currentURL = window.location.protocol + "//" + window.location.host;
+            // console.log(currentURL);
+            newURL = currentURL + "/home_screen.html";
+            // console.log(newURL);
+            window.location.href = newURL;
+        }
+
+        if (unlockSlider.value > 15){
+            unlockLabel.classList.add("unlock-label-transparent");
+        }
+        else {
+            unlockLabel.classList.remove("unlock-label-transparent");
         }
     })
 })
