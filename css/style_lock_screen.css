@@ -131,6 +131,7 @@ input[type=range][data-v-c105abce]::-webkit-slider-thumb{
     /* --tw-bg-opacity:1; */
     /* background-color:rgba(230, 255, 115, var(--tw-bg-opacity)); */
     background-image: url(../images/unlock_slider.png);
+    background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -144,6 +145,7 @@ input[type=range][data-v-c105abce]::-moz-range-thumb{
     border-width:0px;
     /* --tw-bg-opacity:1; */
     /* background-color:rgba(230, 255, 115, var(--tw-bg-opacity)); */
+    background-color: transparent;
     background-image: url(../images/unlock_slider.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -158,6 +160,7 @@ input[type=range][data-v-c105abce]::-ms-thumb{
     /* --tw-bg-opacity:1; */
     /* background-color:rgba(230, 255, 115, var(--tw-bg-opacity)); */
     background-image: url(../images/unlock_slider.png);
+    background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

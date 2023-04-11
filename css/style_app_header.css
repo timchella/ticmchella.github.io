@@ -5,9 +5,9 @@ header[data-v-2a2b7dda]{
     align-items:center;
     justify-content:space-between;
     --tw-bg-opacity:1;
-    background-color:rgba(199, 179, 216, var(--tw-bg-opacity));
+    background-color:rgb(37, 68, 102);
     --tw-text-opacity:1;
-    color:rgba(230, 255, 115, var(--tw-text-opacity));
+    color:rgb(255, 255, 255);
     height:9.16%;
     padding-left:1.25%;
     padding-right:1.25%
@@ -32,11 +32,12 @@ button[data-v-2a2b7dda]{
     height:100%;
     border-width:2px;
     --tw-border-opacity:1;
-    border-color:rgba(230, 255, 115, var(--tw-border-opacity));
+    border-color:rgb(255, 255, 255);
     background-color:transparent;
     --tw-text-opacity:1;
-    color:rgba(230, 255, 115, var(--tw-text-opacity));
-    padding-left:2vw;padding-right:2vw
+    color:rgb(255, 255, 255);
+    padding-left:2vw;
+    padding-right:2vw;
 }
 
 @media (min-width: 768px){

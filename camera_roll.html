@@ -597,7 +597,7 @@
     </style>
     <style type="text/css">
       main{height:100%;width:100%}
-      body{--tw-bg-opacity:1;background-color:rgba(0, 50, 0, 0.8);}
+      body{--tw-bg-opacity:1;background-color:rgba(0, 0, 0, 1);}
     </style>
     
     <link href="css/style_phone.css" rel="stylesheet"/>
@@ -605,7 +605,6 @@
     <link href="css/style_lock_screen.css" rel="stylesheet"/>
     <link href="css/style_home_screen.css" rel="stylesheet"/>
     <link href="css/style_app_header.css" rel="stylesheet"/>
-    <link href="css/style_notes_screen.css" rel="stylesheet"/>
     <link href="css/style_camera_roll.css" rel="stylesheet"/>
   </head>
 
@@ -631,7 +630,7 @@
                 </svg>
               </div>
             </div>
-            <div data-v-d67541be class="justify-center uppercase"> TIME </div> 
+            <div data-v-d67541be id="status-clock" class="justify-center uppercase"> </div> 
             <div data-v-d67541be class="justify-end">
               <div data-v-d67541be>
                 100%
@@ -687,6 +686,7 @@
      -->
     <!-- Template Javascript -->
     <!-- <script src="js/main.js"></script> -->
+    <script src="js/clock.js"></script>
     <script src="js/camera_roll.js"></script>
   </body>
 </html>

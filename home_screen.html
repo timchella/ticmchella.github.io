@@ -597,7 +597,7 @@
     </style>
     <style type="text/css">
       main{height:100%;width:100%}
-      body{--tw-bg-opacity:1;background-color:rgba(0, 50, 0, 0.8);}
+      body{--tw-bg-opacity:1;background-color:rgba(0, 0, 0, 1);}
     </style>
     
     <link href="css/style_phone.css" rel="stylesheet"/>
@@ -628,7 +628,7 @@
                 </svg>
               </div>
             </div>
-            <div data-v-d67541be class="justify-center uppercase"> TIME </div> 
+            <div data-v-d67541be id="status-clock" class="justify-center uppercase"> </div> 
             <div data-v-d67541be class="justify-end">
               <div data-v-d67541be>
                 100%
@@ -644,80 +644,62 @@
           
           <section data-v-1a77935b data-v-088e44fc>
             <div data-v-1a77935b id="home" style="">
-              <div data-v-0ee33287="" data-v-1a77935b class="app">
-                  <div data-v-0ee33287="" class="icon" style="background-image: url(&quot;/images/apps/facebook.jpg&quot;);"></div>
-                  <div data-v-0ee33287="" class="title">
-                      Facebook
-                  </div>
-              </div>
-              <div data-v-0ee33287="" data-v-1a77935b class="app">
-                  <div data-v-0ee33287="" class="icon" style="background-image: url(&quot;/images/apps/calendar.jpg&quot;);"></div>
-                  <div data-v-0ee33287="" class="title">
-                      Calendar
-                  </div>
-              </div>
-              <div data-v-0ee33287="" data-v-1a77935b class="app" id="photos">
-                  <div data-v-0ee33287="" class="icon" style="background-image: url(&quot;/images/apps/photos.png&quot;);"></div>
-                  <div data-v-0ee33287="" class="title">
-                      Photos
-                  </div>
-              </div>
-              <div data-v-0ee33287="" data-v-1a77935b class="app">
-                  <div data-v-0ee33287="" class="icon" style="background-image: url(&quot;/images/apps/camera.png&quot;);"></div>
-                  <div data-v-0ee33287="" class="title">
-                      Camera
-                  </div>
-              </div>
-              <div data-v-0ee33287="" data-v-1a77935b class="app">
-                  <div data-v-0ee33287="" class="icon" style="background-image: url(&quot;/images/apps/youtube.jpg&quot;);"></div>
-                  <div data-v-0ee33287="" class="title">
-                      YouTube
-                  </div>
-              </div>
-              <div data-v-0ee33287="" data-v-1a77935b class="app">
-                  <div data-v-0ee33287="" class="icon" style="background-image: url(&quot;/images/apps/maps.png&quot;);"></div>
-                  <div data-v-0ee33287="" class="title">
-                      Maps
-                  </div>
-              </div>
-              <div data-v-0ee33287="" data-v-1a77935b class="app">
-                  <div data-v-0ee33287="" class="icon" style="background-image: url(&quot;/images/apps/twitter.jpg&quot;);"></div>
-                  <div data-v-0ee33287="" class="title">
-                      Twitter
-                  </div>
-              </div>
-              <div data-v-0ee33287="" data-v-1a77935b class="app">
-                  <div data-v-0ee33287="" class="icon" style="background-image: url(&quot;/images/apps/notes.png&quot;);"></div>
-                  <div data-v-0ee33287="" class="title">
-                      Notes
-                  </div>
-              </div>
-            </div>
-
-            <div data-v-1a77935b id="tray" style="">
-              <div data-v-0ee33287="" data-v-1a77935b class="app tray">
+              <div data-v-0ee33287 data-v-1a77935b class="app">
                 <a href="sms:+11111111111">
-                  <div data-v-0ee33287="" class="icon" style="background-image: url(&quot;/images/apps/messages.png&quot;);"></div>
-                  <div data-v-0ee33287="" class="title">
+                  <div data-v-0ee33287 class="icon" style="background-image: url(&quot;/images/apps/messages.png&quot;);"></div>
+                  <div data-v-0ee33287 class="title">
                       Messages
                   </div>
                 </a>
               </div>
-              <div data-v-0ee33287="" data-v-1a77935b class="app tray">
-                  <div data-v-0ee33287="" class="icon" style="background-image: url(&quot;/images/apps/mail.png&quot;);"></div>
-                  <div data-v-0ee33287="" class="title">
+              <div data-v-0ee33287 data-v-1a77935b class="app" id="notes">
+                <div data-v-0ee33287 class="icon" style="background-image: url(&quot;/images/apps/notes.png&quot;);"></div>
+                <div data-v-0ee33287 class="title">
+                    Notes
+                </div>
+              </div>
+              <div data-v-0ee33287 data-v-1a77935b class="app" id="photos">
+                <div data-v-0ee33287 class="icon" style="background-image: url(&quot;/images/apps/photos.png&quot;);"></div>
+                <div data-v-0ee33287 class="title">
+                    Photos
+                </div>
+              </div>
+              <div data-v-0ee33287 data-v-1a77935b class="app" id="camera">
+                <div data-v-0ee33287 class="icon" style="background-image: url(&quot;/images/apps/camera.png&quot;);"></div>
+                <div data-v-0ee33287 class="title">
+                    Camera
+                </div>
+              </div>
+              <div data-v-0ee33287 data-v-1a77935b class="app" id="maps">
+                <div data-v-0ee33287 class="icon" style="background-image: url(&quot;/images/apps/maps.png&quot;);"></div>
+                <div data-v-0ee33287 class="title">
+                    Maps
+                </div>
+              </div>
+            </div>
+
+            <div data-v-1a77935b id="tray" style="">
+              <div data-v-0ee33287 data-v-1a77935b class="app tray">
+                  <div data-v-0ee33287 class="icon" style="background-image: url(&quot;/images/apps/settings.png&quot;);"></div>
+                  <div data-v-0ee33287 class="title">
+                      Settings
+                  </div>
+              </div>
+              <div data-v-0ee33287 data-v-1a77935b class="app tray">
+                  <div data-v-0ee33287 class="icon" style="background-image: url(&quot;/images/apps/mail.png&quot;);"></div>
+                  <div data-v-0ee33287 class="title">
                       Mail
                   </div>
               </div>
-              <div data-v-0ee33287="" data-v-1a77935b class="app tray">
-                  <div data-v-0ee33287="" class="icon" style="background-image: url(&quot;/images/apps/safari.png&quot;);"></div>
-                      <div data-v-0ee33287="" class="title">
+              <div data-v-0ee33287 data-v-1a77935b class="app tray">
+                  <div data-v-0ee33287 class="icon" style="background-image: url(&quot;/images/apps/safari.png&quot;);"></div>
+                      <div data-v-0ee33287 class="title">
                           Browser
                       </div>
               </div>
-              <div data-v-0ee33287="" data-v-1a77935b class="app tray">
-                      <div data-v-0ee33287="" class="icon" style="background-image: url(&quot;/images/apps/music.png&quot;);"></div>
-                      <div data-v-0ee33287="" class="title">
+              <div data-v-0ee33287 data-v-1a77935b class="app tray">
+                      <div data-v-0ee33287 class="icon" style="background-image: url(&quot;/images/apps/music.png&quot;);"></div>
+                      <div data-v-0ee33287 class="title">
                           Music
                       </div>
               </div>
@@ -738,6 +720,7 @@
      -->
     <!-- Template Javascript -->
     <!-- <script src="js/main.js"></script> -->
+    <script src="js/clock.js"></script>
     <script src="js/home_screen.js"></script>
   </body>
 </html>
