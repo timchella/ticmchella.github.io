@@ -4,7 +4,8 @@
     --tw-border-opacity:1;
     border-color:rgba(199, 179, 216, var(--tw-border-opacity));
     background-size:cover;
-    background-position:center;aspect-ratio:1/1
+    background-position:center;
+    aspect-ratio:1/1
 }
 
 @supports not (aspect-ratio:1/1){
@@ -19,11 +20,13 @@ section[data-v-baf22cf6]{
     display:flex;
     flex-direction:column;
     --tw-bg-opacity:1;
-    background-color:rgba(230, 255, 115, var(--tw-bg-opacity))
+    background-color:rgb(241, 241, 241);
 }
 
 #thumbnails[data-v-baf22cf6]{
     display:grid;flex:1 1 0%;
     grid-template-columns:repeat(4, minmax(0, 1fr));
-    align-content:flex-start;grid-gap:1.25%;padding:1.25%
+    align-content:flex-start;
+    grid-gap:1.25%;
+    padding:1.25%
 }
