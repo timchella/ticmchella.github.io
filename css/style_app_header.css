@@ -5,7 +5,8 @@ header[data-v-2a2b7dda]{
     align-items:center;
     justify-content:space-between;
     --tw-bg-opacity:1;
-    background-color:rgb(37, 68, 102);
+    /* background-color:rgb(37, 68, 102); */
+    background:linear-gradient(#999999, #3a3a3a);
     --tw-text-opacity:1;
     color:rgb(255, 255, 255);
     height:9.16%;
@@ -30,14 +31,19 @@ h1[data-v-2a2b7dda]{
 button[data-v-2a2b7dda]{
     display:block;
     height:100%;
-    border-width:2px;
+    /* border-width:1px; */
     --tw-border-opacity:1;
-    border-color:rgb(255, 255, 255);
-    background-color:transparent;
+    /* border-color:rgb(0, 0, 0); */
+    /* background-color:transparent; */
+    background: linear-gradient(#444444, #000000);
     --tw-text-opacity:1;
     color:rgb(255, 255, 255);
-    padding-left:2vw;
+    padding-left:4vw;
     padding-right:2vw;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    box-shadow: inset 0px 0px 5px black;
 }
 
 @media (min-width: 768px){
@@ -49,7 +55,7 @@ button[data-v-2a2b7dda]{
     }
     button[data-v-2a2b7dda]{
         font-size:1.3vh;
-        padding-left:.65vw;
+        padding-left:1.3vw;
         padding-right:.65vw
     }
 }

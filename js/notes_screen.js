@@ -10,14 +10,14 @@ window.addEventListener('load', function() {
         window.location.href = newURL;
     });
 
-    cameraRollLink = document.getElementById("camera-roll-link");
-    // console.log(cameraRollLink);
-    cameraRollLink.addEventListener("click", () => {
-        currentURL = window.location.protocol + "//" + window.location.host;
-        // console.log(currentURL);
-        newURL = currentURL + "/camera_roll.html";
-        // console.log(newURL);
-        window.location.href = newURL;
-    });
+    // cameraRollLink = document.getElementById("camera-roll-link");
+    // // console.log(cameraRollLink);
+    // cameraRollLink.addEventListener("click", () => {
+    //     currentURL = window.location.protocol + "//" + window.location.host;
+    //     // console.log(currentURL);
+    //     newURL = currentURL + "/camera_roll.html";
+    //     // console.log(newURL);
+    //     window.location.href = newURL;
+    // });
 
 })

@@ -2,7 +2,7 @@
     cursor:pointer;
     border-width:1px;
     --tw-border-opacity:1;
-    border-color:rgba(199, 179, 216, var(--tw-border-opacity));
+    border-color:rgb(150, 150, 150);
     background-size:cover;
     background-position:center;
     aspect-ratio:1/1

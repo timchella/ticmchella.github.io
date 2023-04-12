@@ -1,5 +1,6 @@
 header[data-v-2a2b7dda]{
-    background-color:rgb(80, 57, 50);
+    /* background-color:rgb(80, 57, 50); */
+    background:linear-gradient(rgb(134, 103, 93), rgb(99, 68, 59), rgb(73, 47, 41), rgb(61, 44, 38));
 }
 
 
