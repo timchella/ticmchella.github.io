@@ -1,4 +1,4 @@
-const SPEED_NUM = 0.25; // slow the speed of the shutter by increasing this number
+const SPEED_NUM = 0.50; // slow the speed of the shutter by increasing this number
 const ROTATION_DEG = 60;
 const CSS_IS_ACTIVE = "is--active";
 
@@ -39,13 +39,14 @@ class ShutterGSAP {
 	onAnimate() {
 		if(!this.shutterContainer.classList.contains(CSS_IS_ACTIVE)) {
 			this.shutterContainer.classList.add(CSS_IS_ACTIVE);
+			setTimeout(replaceBackground, 1500);
 		}
         // console.log("onAnimate()");
 		this.shutterTimeline.play();
 	}
 
 	stopAnimate() {
-        replaceBackground();
+        // replaceBackground();
 		if(this.shutterContainer.classList.contains(CSS_IS_ACTIVE)) {
 			this.shutterContainer.classList.remove(CSS_IS_ACTIVE);
 			this.shutterTimeline.pause(0, false);
@@ -88,7 +89,7 @@ window.addEventListener('load', function() {
     // pictureCount = 5;
 
     picture = document.getElementById("picture");
-    picture.style.backgroundImage="url(/images/thumbs/1000.png)";
+    picture.style.backgroundImage="url(/images/thumbs/100.jpg)";
     // picture.style.backgroundImage="url(/images/thumbs/8_square.jpg)";
 
 })
@@ -111,15 +112,15 @@ function generateRandomNumber(avoidNum) {
 function replaceBackground() {
     picture = document.getElementById("picture");
     pictureURL = picture.style.backgroundImage;
-    console.log(pictureURL);
+    // console.log(pictureURL);
     pictureURL = pictureURL.split("/")[3];
-    console.log(pictureURL);
+    // console.log(pictureURL);
     pictureNum = pictureURL.split(".")[0];
-    console.log(pictureNum);
+    // console.log(pictureNum);
     pictureNum = parseInt(pictureNum);
 
     newNum = generateRandomNumber(pictureNum);
-    console.log(newNum);
+    // console.log(newNum);
 
     picture.style.backgroundImage="url(/images/thumbs/" + newNum + ".jpg)";
 }
