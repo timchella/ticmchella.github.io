@@ -88,15 +88,38 @@ window.addEventListener('load', function() {
     // pictureCount = 5;
 
     picture = document.getElementById("picture");
-    picture.style.backgroundImage="url(/images/thumbs/" + Math.ceil(Math.random() * pictureCount) + ".jpg)";
+    picture.style.backgroundImage="url(/images/thumbs/1000.png)";
     // picture.style.backgroundImage="url(/images/thumbs/8_square.jpg)";
 
 })
 
-pictureCount = 5;
+pictureCount = 2;
+
+
+function generateRandomNumber(avoidNum) {
+    console.log("generateRandomNumber()");
+    randNum = Math.ceil(Math.random() * pictureCount);
+    console.log(randNum);
+    if( randNum == avoidNum){
+        return generateRandomNumber(avoidNum);
+    }
+    else{
+        return parseInt(randNum);
+    }
+}
 
 function replaceBackground() {
     picture = document.getElementById("picture");
-    // console.log(picture.style.backgroundImage);
-    picture.style.backgroundImage="url(/images/thumbs/" + Math.ceil(Math.random() * pictureCount) + ".jpg)";
+    pictureURL = picture.style.backgroundImage;
+    console.log(pictureURL);
+    pictureURL = pictureURL.split("/")[3];
+    console.log(pictureURL);
+    pictureNum = pictureURL.split(".")[0];
+    console.log(pictureNum);
+    pictureNum = parseInt(pictureNum);
+
+    newNum = generateRandomNumber(pictureNum);
+    console.log(newNum);
+
+    picture.style.backgroundImage="url(/images/thumbs/" + newNum + ".jpg)";
 }
