@@ -45,11 +45,11 @@ window.addEventListener('load', function() {
 
     unlockSlider = document.getElementById("unlock_slider");
     unlockLabel = document.getElementById("slider-label");
-    console.log(unlockSlider);
+    // console.log(unlockSlider);
     unlockSlider.addEventListener("input", (e) => {
-        console.log(unlockSlider.value);
+        // console.log(unlockSlider.value);
         if (unlockSlider.value > 95){
-            console.log("UNLOCK");
+            // console.log("UNLOCK");
             currentURL = window.location.protocol + "//" + window.location.host;
             // console.log(currentURL);
             newURL = currentURL + "/home_screen.html";
