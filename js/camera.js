@@ -94,7 +94,7 @@ window.addEventListener('load', function() {
 
 })
 
-pictureCount = 11;
+pictureCount = 12;
 
 
 function generateRandomNumber(avoidNum) {
