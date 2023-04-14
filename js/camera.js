@@ -94,7 +94,7 @@ window.addEventListener('load', function() {
 
 })
 
-pictureCount = 2;
+pictureCount = 10;
 
 
 function generateRandomNumber(avoidNum) {
@@ -122,5 +122,5 @@ function replaceBackground() {
     newNum = generateRandomNumber(pictureNum);
     // console.log(newNum);
 
-    picture.style.backgroundImage="url(/images/thumbs/" + newNum + ".jpg)";
+    picture.style.backgroundImage="url(/images/extra_photos/" + newNum + ".jpg)";
 }
