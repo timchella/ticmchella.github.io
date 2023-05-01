@@ -34,6 +34,6 @@ window.addEventListener('load', function() {
 
     mapsApp = document.getElementById("maps");
     mapsApp.addEventListener("click", () => {
-        window.open("https://goo.gl/maps/Ktdzypwo6rsPqr6p6","_blank")
+        window.open("https://goo.gl/maps/219EzywHAWPFhzTL7","_blank")
     })
 })
